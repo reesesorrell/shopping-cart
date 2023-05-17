@@ -1,0 +1,16 @@
+.darkHeader,
+.lightHeader {
+    margin-top: 4vh;
+    margin-left: 75px;
+    margin-right: 15px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-header-container {
+    width: 48vw;
+    display: flex;
+    justify-content: space-around;
+}
