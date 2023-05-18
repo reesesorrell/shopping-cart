@@ -1,15 +1,18 @@
 import Header from "./Header";
 import "../style/home.css"
-import backgroundImage from "../images/board-game-background.png";
+import background from "../images/board-game-background2.jpg";
 
 const Home = () => {
     return(
-        <div className="Home">
+        <div className="Home" style={{
+            background: `url(${background})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'}}>
             <Header darkMode={true}></Header>
             <div className="home-contents">
-                <div>Board Games for You</div>
-                <div>All games avaliable for preorder, shipping December, 2023</div>
-                <button>Shop Now</button>
+                <div className="home-text-title">Board Games for You</div>
+                <div className="home-text">All games avaliable for preorder, shipping December, 2023</div>
+                <button className="shop-now-button">Shop Now</button>
             </div>
         </div>
     )

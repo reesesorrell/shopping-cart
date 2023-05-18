@@ -1,12 +1,22 @@
 .darkHeader,
 .lightHeader {
-    margin-top: 4vh;
+    padding-top: 4vh;
     margin-left: 75px;
     margin-right: 15px;
     height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+}
+
+.darkHeader {
+    color: white;
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: .75rem;
 }
 
 .right-header-container {

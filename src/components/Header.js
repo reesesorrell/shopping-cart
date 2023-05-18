@@ -3,7 +3,7 @@ import "../style/header.css"
 const Header = ({darkMode}) => {
     return (
         <div className={darkMode ? "darkHeader" : "lightHeader"}>
-            <div className="title">Sorrell Games</div>
+            <a href="/" className="title">Sorrell Games</a>
             <div className="right-header-container">
                 <div>Shop</div>
                 <div>Search</div>
