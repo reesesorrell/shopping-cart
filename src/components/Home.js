@@ -12,7 +12,7 @@ const Home = () => {
             <div className="home-contents">
                 <div className="home-text-title">Board Games for You</div>
                 <div className="home-text">All games avaliable for preorder, shipping December, 2023</div>
-                <button className="shop-now-button">Shop Now</button>
+                <a className="shop-now-button button" href="/catalog">SHOP NOW</a>
             </div>
         </div>
     )
