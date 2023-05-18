@@ -28,9 +28,9 @@
 .category-name {
     display: inline-block;
     position: relative;
-  }
-  
-  .category-name:after {
+    }
+
+    .category-name:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -41,13 +41,44 @@
     background-color: grey;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .category-name:hover:after {
+    }
+
+    .category-name:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+    }
 
-  .category-name:hover {
+    .category-name:hover {
     cursor: pointer;
-  }
+    }
+
+.catalog-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    margin-left: 80px;
+    gap: 10px;
+}
+
+.preview-card {
+    height: 400px;
+}
+
+.image-area {
+    background-color: aliceblue;
+    height: 300px;
+    width: 300px;
+}
+
+.preview-name {
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+.preview-price {
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.description {
+    margin-left: 3px;
+}

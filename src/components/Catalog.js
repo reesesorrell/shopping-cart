@@ -13,8 +13,17 @@ const Catalog = ({items}) => {
     function createCards(cards, elementList) {
         for(let i = 0; i<elementList.length; i++) {
             cards.push(
-                <div key={i}>
-                    {elementList[i].name + ' ' + elementList[i].price}
+                <div className="preview-card" key={i}>
+                    <div className="image-area">
+                    </div>
+                    <div className="description">
+                        <div className="preview-name">
+                            {elementList[i].name}
+                        </div>
+                        <div className="preview-price">
+                            {'$' + elementList[i].price}
+                        </div>
+                    </div>
                 </div>
             )
         }
@@ -35,6 +44,9 @@ const Catalog = ({items}) => {
                         <a className="category-name">Card Games</a>
                         <a className="category-name">Accessories</a>
                     </div>
+                </div>
+                <div className="catalog-preview">
+                    {cards}
                 </div>
             </div>
         </div>
