@@ -5,32 +5,25 @@ import PreviewCard from "./PreviewCards"
 
 const Catalog = ({items}) => {
     let cards =[]
+    for (let k in productInfo) {
+        if (productInfo[k].category === items || items==="all") {
+            cards.push(
+                <PreviewCard gameInfo={productInfo[k]} gameKey={k}/>
+            )
+        }
+    }
     if (items === "all") {
-        createCards(cards, productInfo.tableTop);
-        createCards(cards, productInfo.card);
-        createCards(cards, productInfo.accessories);
         var catalogDescription = [<div className="current-category">All</div>,
         <div className="current-category">Products</div>]
     }
     else if (items === "table-top") {
-        createCards(cards, productInfo.tableTop);
         var catalogDescription = [<div className="current-category">Table Top</div>]
     }
     else if (items === "cards") {
-        createCards(cards, productInfo.card);
         var catalogDescription = [<div className="current-category">Card Games</div>]
     }
     else if (items === "accessories") {
-        createCards(cards, productInfo.accessories);
         var catalogDescription = [<div className="current-category">Accessories</div>]
-    }
-
-    function createCards(cards, elementList) {
-        for(let i = 0; i<elementList.length; i++) {
-            cards.push(
-                <PreviewCard i={i} gameInfo={elementList[i]}/>
-            )
-        }
     }
 
     return(

@@ -1,7 +1,7 @@
-const PreviewCard = ({i, gameInfo}) => {
+const PreviewCard = ({gameInfo, gameKey}) => {
 
     return (
-        <a className="preview-card" key={i}>
+        <a className="preview-card" href={`/products/${gameKey}`} key={gameKey}>
             <div className="image-area">
                 <img className="bottom" src={gameInfo.hoverImg}></img>
                 <img className="top" src={gameInfo.frontImg}></img>
