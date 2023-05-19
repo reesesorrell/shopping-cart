@@ -63,12 +63,6 @@
     height: 400px;
 }
 
-.image-area {
-    background-color: aliceblue;
-    height: 300px;
-    width: 300px;
-}
-
 .preview-name {
     font-size: 25px;
     margin-top: 18px;
@@ -81,4 +75,36 @@
 
 .description {
     margin-left: 3px;
+}
+
+.image-area {
+    background-color: #f1eeeb;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    max-width: 100%;
+}
+
+.image-area img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-area img.top {
+    object-fit: contain;
+}
+
+.image-area img.bottom {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.image-area:hover img.bottom {
+    opacity: 1;
 }

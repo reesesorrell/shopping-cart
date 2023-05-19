@@ -1,6 +1,7 @@
 import Header from "./Header"
 import "../style/catalog.css"
 import productInfo from "../info/productInfo"
+import PreviewCard from "./PreviewCards"
 
 const Catalog = ({items}) => {
     let cards =[]
@@ -13,18 +14,7 @@ const Catalog = ({items}) => {
     function createCards(cards, elementList) {
         for(let i = 0; i<elementList.length; i++) {
             cards.push(
-                <div className="preview-card" key={i}>
-                    <div className="image-area">
-                    </div>
-                    <div className="description">
-                        <div className="preview-name">
-                            {elementList[i].name}
-                        </div>
-                        <div className="preview-price">
-                            {'$' + elementList[i].price}
-                        </div>
-                    </div>
-                </div>
+                <PreviewCard i={i} gameInfo={elementList[i]}/>
             )
         }
     }
