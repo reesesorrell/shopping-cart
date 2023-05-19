@@ -1,7 +1,7 @@
 const PreviewCard = ({i, gameInfo}) => {
 
     return (
-        <div className="preview-card" key={i}>
+        <a className="preview-card" key={i}>
             <div className="image-area">
                 <img className="bottom" src={gameInfo.hoverImg}></img>
                 <img className="top" src={gameInfo.frontImg}></img>
@@ -14,7 +14,7 @@ const PreviewCard = ({i, gameInfo}) => {
                     {'$' + gameInfo.price}
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
