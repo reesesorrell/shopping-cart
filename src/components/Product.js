@@ -17,10 +17,10 @@ const Product = () => {
                 <div className="product-title">{currentItem.name}</div>
                 <img className="product-image" src={currentItem.frontImg}></img>
                 <div className="product-sidebar">
-                    <div className="square-logo">SOR</div>
-                    <div className="product-price">{currentItem.price}</div>
-                    <button>ADD TO CART</button>
-                    <button>BUY IT NOW</button>
+                    <div className="square-logo">SOR<br />REL<br />GAM</div>
+                    <div className="product-price">{`$${currentItem.price}`}</div>
+                    <button className="add-to-cart">ADD TO CART</button>
+                    <button className="buy-it-now">BUY IT NOW</button>
                 </div>
             </div>
         </div>
