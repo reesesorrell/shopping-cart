@@ -2,13 +2,14 @@ import Header from "./Header"
 import "../style/catalog.css"
 import productInfo from "../info/productInfo"
 import PreviewCard from "./PreviewCards"
+import { Link } from "react-router-dom"
 
-const Catalog = ({items}) => {
+const Catalog = ({items, cart}) => {
     let cards =[]
     for (let k in productInfo) {
         if (productInfo[k].category === items || items==="all") {
             cards.push(
-                <PreviewCard gameInfo={productInfo[k]} gameKey={k}/>
+                <PreviewCard gameInfo={productInfo[k]} gameKey={k} />
             )
         }
     }
@@ -28,7 +29,7 @@ const Catalog = ({items}) => {
 
     return(
         <div className="catalog">
-            <Header darkMode={false} />
+            <Header darkMode={false} cart={cart}/>
             <div className="catalog-contents">
                 <div className="catalog-sidebar">
                     <div className="shopping-title">
@@ -36,9 +37,9 @@ const Catalog = ({items}) => {
                         {catalogDescription}
                     </div>
                     <div className="shopping-options">
-                        <a className="category-name" href="/catalog/table-top">Table Top</a>
-                        <a className="category-name" href="/catalog/cards">Card Games</a>
-                        <a className="category-name" href="/catalog/accessories">Accessories</a>
+                        <Link className="category-name" to="/catalog/table-top">Table Top</Link>
+                        <Link className="category-name" to="/catalog/cards">Card Games</Link>
+                        <Link className="category-name" to="/catalog/accessories">Accessories</Link>
                     </div>
                 </div>
                 <div className="catalog-preview">

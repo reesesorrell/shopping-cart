@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 const PreviewCard = ({gameInfo, gameKey}) => {
 
     return (
-        <a className="preview-card" href={`/products/${gameKey}`} key={gameKey}>
+        <Link className="preview-card" to={`/products/${gameKey}`} key={gameKey}>
             <div className="image-area">
                 <img className="bottom" src={gameInfo.hoverImg}></img>
                 <img className="top" src={gameInfo.frontImg}></img>
@@ -14,7 +16,7 @@ const PreviewCard = ({gameInfo, gameKey}) => {
                     {'$' + gameInfo.price}
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 
