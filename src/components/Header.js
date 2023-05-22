@@ -1,16 +1,26 @@
 import "../style/header.css"
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ShoppingCart from "./ShoppingCart";
+import productInfo from "../info/productInfo";
 
 const Header = ({darkMode, cart}) => {
 
     const [cartDisplay, setCartDisplay] = useState([]);
 
     const createCart = () => {
+        let totalPrice = 0;
+        for (let k in cart) {
+            totalPrice += productInfo[k].price * cart[k];
+        }
         setCartDisplay([
         <div key='1' className="black-screen"></div>,
         <div key='2' className="cart-sidebar">
             <div onClick={clearCartSidebar} className="cart-sidebar-x">X</div>
+            <div className="cart-title">Your<br /> Shopping <br /> Cart</div>
+            <ShoppingCart cart={cart}/>
+            <div className="total-price-display">{`Subtotal:  $${totalPrice.toFixed(2)}`}</div>
+            <button className="checkout-button">CHECKOUT</button>
         </div>
     ]);
     }
