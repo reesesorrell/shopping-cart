@@ -1,12 +1,22 @@
 import "../style/header.css"
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ShoppingCart from "./ShoppingCart";
 import productInfo from "../info/productInfo";
 
-const Header = ({darkMode, cart}) => {
+const Header = ({darkMode, cart, displaySidebar=false}) => {
 
     const [cartDisplay, setCartDisplay] = useState([]);
+
+    const [isInitialMount, setIsInitialMount] = useState(true);
+
+    useEffect(() => {
+        if (isInitialMount) {
+            setIsInitialMount(false);
+         } else {
+            createCart();
+        }
+    }, [displaySidebar]);
 
     const createCart = () => {
         let totalPrice = 0;
@@ -37,7 +47,7 @@ const Header = ({darkMode, cart}) => {
                 <div className="right-header-container">
                     <Link to="/catalog">Shop</Link>
                     <div className="header-button">Search</div>
-                    <div className="header-button" onClick={createCart}>Bag - {Object.keys(cart).length}</div>
+                    <div className="header-button bag-button" onClick={createCart}>Bag - {Object.keys(cart).length}</div>
                 </div>
             </div>
         </div>
