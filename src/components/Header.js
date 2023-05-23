@@ -37,7 +37,7 @@ const Header = ({darkMode, cart}) => {
                 <div className="right-header-container">
                     <Link to="/catalog">Shop</Link>
                     <div className="header-button">Search</div>
-                    <div className="header-button" onClick={createCart}>Bag</div>
+                    <div className="header-button" onClick={createCart}>Bag - {Object.keys(cart).length}</div>
                 </div>
             </div>
         </div>

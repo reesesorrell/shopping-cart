@@ -88,10 +88,13 @@
     border: solid 1px black;
     width: 70%;
     height: 10%;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .checkout-button:hover {
     cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .total-price-display {
