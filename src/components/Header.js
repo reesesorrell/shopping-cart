@@ -7,6 +7,7 @@ import productInfo from "../info/productInfo";
 const Header = ({darkMode, cart, displaySidebar=false}) => {
 
     const [cartDisplay, setCartDisplay] = useState([]);
+    const [searchDisplay, setSearchDisplay] = useState([]);
 
     const [isInitialMount, setIsInitialMount] = useState(true);
 
@@ -39,14 +40,30 @@ const Header = ({darkMode, cart, displaySidebar=false}) => {
         setCartDisplay([]);
     }
 
+    const createSearch = () => {
+        setSearchDisplay([
+            <div className="black-screen">
+                <div onClick={clearSearch} className="search-x">X</div>
+                <input type="text" className="search-bar" placeholder="Search Products"></input>
+                <hr className="underline"></hr>
+            </div>
+        ])
+    }
+
+    const clearSearch = () => {
+        setSearchDisplay([]);
+    }
+
+
     return (
         <div>
             {cartDisplay}
+            {searchDisplay}
             <div className={darkMode ? "darkHeader" : "lightHeader"}>
                 <Link to="/" className="title">Sorrell Games</Link>
                 <div className="right-header-container">
                     <Link to="/catalog">Shop</Link>
-                    <div className="header-button">Search</div>
+                    <div className="header-button" onClick={createSearch}>Search</div>
                     <div className="header-button bag-button" onClick={createCart}>Bag - {Object.keys(cart).length}</div>
                 </div>
             </div>

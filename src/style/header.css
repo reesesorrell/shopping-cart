@@ -104,3 +104,39 @@
     margin-top: 175px;
     letter-spacing: .12rem;
 }
+
+.search-x {
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    font-size: 35px;
+    color: white;
+}
+
+.search-x:hover {
+    cursor: pointer;
+}
+
+.search-bar {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.underline {
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    width: 40%;
+}
