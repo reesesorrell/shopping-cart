@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.b1eebb84.css",
+    "main.js": "/shopping-cart/static/js/main.c8eea7e1.js",
+    "static/media/insideSeventhContinent.png": "/shopping-cart/static/media/insideSeventhContinent.f01c4ae143f3d4f191b1.png",
+    "static/media/sevenWondersBack.png": "/shopping-cart/static/media/sevenWondersBack.66cffab8880681616d8d.png",
+    "static/media/board-game-background2.jpg": "/shopping-cart/static/media/board-game-background2.23ca0095b0cb5aca42e1.jpg",
+    "static/media/hourglassBack.jpg": "/shopping-cart/static/media/hourglassBack.21578143be895d7018e1.jpg",
+    "static/media/sevenWondersFront.png": "/shopping-cart/static/media/sevenWondersFront.e04d5d1c8f6b1d554972.png",
+    "static/media/sushiFront.png": "/shopping-cart/static/media/sushiFront.e8b9ffa45452a749e873.png",
+    "static/media/unoBack.jpg": "/shopping-cart/static/media/unoBack.703501f3dcb74efe04eb.jpg",
+    "static/media/unoFront.png": "/shopping-cart/static/media/unoFront.dd988021a0e4ad51c4f8.png",
+    "static/media/seventhContinent.png": "/shopping-cart/static/media/seventhContinent.9cf0cc730ade1de22aa6.png",
+    "static/media/diceFront.png": "/shopping-cart/static/media/diceFront.695bd66383ea336670fc.png",
+    "static/media/ticketToRideFront.png": "/shopping-cart/static/media/ticketToRideFront.0ec2d0829c94635ee72b.png",
+    "static/media/ticketToRideInside.jpg": "/shopping-cart/static/media/ticketToRideInside.a78a7e2425b58395c3f6.jpg",
+    "static/media/diceBack.jpg": "/shopping-cart/static/media/diceBack.b7401ae36cbce7723573.jpg",
+    "static/media/sushiBack.jpg": "/shopping-cart/static/media/sushiBack.a1409bb1f4a44edcd1f6.jpg",
+    "static/media/hourglassFront.png": "/shopping-cart/static/media/hourglassFront.f207950884a2bb3da7c5.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.b1eebb84.css.map": "/shopping-cart/static/css/main.b1eebb84.css.map",
+    "main.c8eea7e1.js.map": "/shopping-cart/static/js/main.c8eea7e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1eebb84.css",
+    "static/js/main.c8eea7e1.js"
+  ]
+}
