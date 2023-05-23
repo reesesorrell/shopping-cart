@@ -40,3 +40,18 @@
 .shop-now-button:hover {
     box-shadow: 3px 3px black, 4px 4px white;
 }
+
+@media only screen and (max-device-width: 600px) {
+    .home-contents {
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 50px;
+    }
+
+    .home-text-title {
+        font-size: 35px;
+    }
+    .home-text {
+        font-size: 20px;
+    }
+}

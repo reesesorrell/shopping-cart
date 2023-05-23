@@ -72,3 +72,47 @@
 .buy-it-now:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-device-width: 600px) {
+    .item-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 75px;
+    }
+    .product-image,
+    .product-title,
+    .product-sidebar {
+        position: static;
+    }
+    .product-title {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .product-image {
+        max-width: 260px;
+        max-height: 260px;
+        margin: 75px 0;
+        object-fit: scale-down;
+    }
+    .product-sidebar {
+        width: 100vw;
+        height: 55vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .square-logo {
+        font-size: 18px;
+        letter-spacing: 1.5rem;
+        line-height: 2rem;
+    }
+    .add-to-cart,
+    .buy-it-now {
+    height: 50px;
+    }
+    .product-price {
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: .3rem;
+    }
+}

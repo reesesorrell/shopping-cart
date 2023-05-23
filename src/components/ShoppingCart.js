@@ -30,7 +30,7 @@ const ShoppingCart = ({addToCart, removeFromCart, cart}) => {
                 <div className="cart-name">{name}</div>
                 <div className="cart-quantity">{quantity}</div>
             </div>
-            <div>
+            <div className="cart-price">
                 {`$${price}`}
             </div>
         </div>

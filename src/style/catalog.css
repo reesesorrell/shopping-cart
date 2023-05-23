@@ -108,3 +108,46 @@
 .image-area:hover img.bottom {
     opacity: 1;
 }
+
+@media only screen and (max-device-width: 600px) {
+    .catalog-contents {
+        display: flex;
+        flex-direction: column;
+    }
+    .catalog-sidebar {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .shopping-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .current-category {
+        font-size: 30px;
+    }
+    .shopping-options {
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .catalog-preview {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .preview-card {
+        height: 260px;
+        width: 130px;
+    }
+    .image-area {
+        width: 130px;
+        height: 130px;
+    }
+    .preview-name {
+        font-size: 20px;
+    }
+    .category-name:after {
+        width: 40%;
+    }
+}
